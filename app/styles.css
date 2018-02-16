@@ -1,0 +1,178 @@
+body {
+    margin: 0
+}
+
+
+div#sliding-lines-container {
+    width: 100%;
+    height: 40vh;
+    margin-top: 40px;
+    position: relative;
+}
+
+div#hero {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+div.hero {
+    width: 60px;
+    height: 60px;
+    background: url("static/images/producer_weinstein_harvey.png");
+    background-size: cover;
+}
+
+div.hero.left {
+    float: left;
+    transform: rotate(45deg);
+}
+
+div.hero.right {
+    float: right;
+    transform: rotate(-45deg);
+}
+
+canvas.line-left {
+    float: left;
+}
+
+canvas.line-right {
+    float: right;
+}
+
+canvas.case {
+    position: absolute;
+}
+
+div.case {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("static/images/if_vector_65_05_473784.svg");
+    background-size: cover;
+}
+
+#scores {
+    display: flex;
+    padding-top: 10px;
+}
+
+#scores>div {
+    flex: 1;
+    text-align: center;
+}
+
+#controls {
+    width: 90%;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+
+#controls button {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+#controls button.button-right {
+    border-style: solid;
+    border-width: 27.5px 0 27.5px 47.6px;
+    border-color: transparent transparent transparent #cccccc;
+}
+
+#controls button.button-right:active {
+    border-color: transparent transparent transparent #999;
+}
+
+#controls button.button-left {
+
+    border-style: solid;
+    border-width: 27.5px 47.6px 27.5px 0;
+    border-color: transparent #cccccc transparent transparent;
+}
+
+#controls button.button-left:active {
+    border-color: transparent #999 transparent transparent;
+}
+
+#controls>.touch-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#controls>.touch-container.left {
+    justify-content: flex-start;
+}
+
+#controls>.touch-container.right  {
+    justify-content: flex-end;
+}
+
+#game-container {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-device-width: 480px){
+    #game-container {
+        width: 100%;
+        border: none;
+    }
+}
+
+#surface {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background: url("static/images/12413706331894925007Anonymous_Newspaper_1.svg.med.png"), linear-gradient(transparent, black);
+    background-size: contain;
+}
+
+div.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+
+div.modal {
+    position: absolute;
+    bottom: 100px;
+    align-self: center;
+    width: 80%;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.play-button {
+    width: 0;
+    height: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    border-style: solid;
+    border-width: 50px 0 50px 86.6px;
+    border-color: transparent transparent transparent #303030;
+}
