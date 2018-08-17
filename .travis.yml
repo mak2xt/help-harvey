@@ -4,7 +4,7 @@ node_js:
 before_script:
   - npm install -g parcel-bundler
 script:
-  - parcel build app/index.html --public-url ./help-harvey/
+  - parcel build app/index.html --public-url /help-harvey/
 deploy:
   provider: pages
   skip_cleanup: true
