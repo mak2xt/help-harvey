@@ -1,4 +1,4 @@
 # Help Harvey Game
 Help Harvey Weinstein avoid public accusations
 
-http://138.197.173.53/
+https://mak2xt.github.io/help-harvey/
