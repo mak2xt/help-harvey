@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "8.11.4"
+before_script:
+  - npm install -g parcel-bundler
+script:
+  - parcel build app/index.html
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
